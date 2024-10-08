@@ -1,0 +1,118 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+import React, { FC } from 'react';
+
+interface Props {
+  title: string;
+  children: React.ReactNode;
+}
+
+const TemplateComponent: FC<Props> = ({ title, children }) => {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <div>{children}</div>
+    </div>
+  );
+};
+
+export default TemplateComponent;
+
+
+
+
+
+
+<div className="mb-4">
+          <h1 className="font-bold text-2xl">PatelEats</h1>
+        </div>
+        <div className="mb-4">
+          <div className="relative">
+            <Input
+              type="email"
+              placeholder="Email"
+              name="email"
+            //   value={input.email}
+            //   onChange={changeEventHandler}
+              className="pl-10 focus-visible:ring-1"
+            />
+            <Mail className="absolute inset-y-2 left-2 text-gray-500 pointer-events-none" />
+            {/* {errors && (
+            //   <span className="text-xs text-red-500">{errors.email}</span>
+            )} */}
+          </div>
+        </div>
+        <div className="mb-4">
+          <div className="relative">
+            <Input
+              type="password"
+              placeholder="Password"
+              name="password"
+            //   value={input.password}
+              onChange={changeEventHandler}
+              className="pl-10 focus-visible:ring-1"
+            />
+            <LockKeyhole className="absolute inset-y-2 left-2 text-gray-500 pointer-events-none" />
+            {/* {errors && (
+              <span className="text-xs text-red-500">{errors.password}</span>
+            )} */}
+          </div>
+        </div>
+        <div className="mb-10">
+          {loading ? (
+            <Button disabled className="w-full bg-orange hover:bg-hoverOrange">
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Please wait
+            </Button>
+          ) : (
+            <Button
+              type="submit"
+              className="w-full bg-orange hover:bg-hoverOrange"
+            >
+              Login
+            </Button>
+          )}
+          <div className="mt-4">
+            <Link
+              to="/forgot-password"
+              className="hover:text-blue-500 hover:underline"
+            >
+              Forgot Password
+            </Link>
+          </div>
+        </div>
+        <Separator />
+        <p className="mt-2">
+          Don't have an account?{" "}
+          <Link to="/signup" className="text-blue-500">
+            Signup
+          </Link>
+        </p>
+      </form>
+    </div>
+  );
+};
+
+export default Login;
