@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "sonner";
 import { LoginInputState, SignupInputState } from "@/schema/UserSchema";
 
-const API_END_POINT = "https://full-stack-restaurant-app.onrender/api/v1/user"
+const API_END_POINT = "https://full-stack-restaurant-app.onrender.com/api/v1/user"
 axios.defaults.withCredentials = true;
 
 type User = {
