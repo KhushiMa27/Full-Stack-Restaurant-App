@@ -1,5 +1,7 @@
 Restaurant Website using MERN Stack
 
+Live preview-https://full-stack-restaurant-app.onrender.com
+
 Overview
 
 This project is a comprehensive guide to building a production-ready restaurant website using the powerful MERN stack (MongoDB, Express, React, Node.js). The website is designed to be scalable, full-featured, and secure, with a focus on best practices for development, deployment, and maintenance.
