@@ -40,6 +40,9 @@ const SearchPage = () => {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
             <Button
+              onClick={() =>
+              searchRestaurant(params.text!, searchQuery, appliedFilter)
+            }
               className="bg-orange hover:bg-hoverOrange"
             >
               Search
