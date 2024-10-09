@@ -197,13 +197,7 @@ const MobileNavbar = () =>
             <HandPlatter />
             <span>Order</span>
           </Link>
-          <Link
-            to="/cart"
-            className="flex items-center gap-4 hover:bg-gray-200 px-3 py-2 rounded-lg cursor-pointer hover:text-gray-900 font-medium"
-          >
-            <ShoppingCart />
-            <span>Cart (0)</span>
-          </Link>
+          
           {user?.admin && (
             <>
               <Link
@@ -236,7 +230,7 @@ const MobileNavbar = () =>
               <AvatarImage src={user?.profilePicture} alt="profilephoto" />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
-            <h1 className="font-bold">Patel Mernstack</h1>
+            <h1 className="font-bold">{user?.fullname}</h1>
           </div>
           <SheetClose asChild>
             {loading ? (
