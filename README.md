@@ -1,6 +1,8 @@
 Restaurant Website using MERN Stack
 
 Live preview-https://full-stack-restaurant-app.onrender.com
+username:onehope325@gmail.com
+password:123456789
 
 Overview
 
